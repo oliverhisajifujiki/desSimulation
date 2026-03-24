@@ -67,14 +67,14 @@ class SimulationParams:
     # --------------------------
     a1: float = 0.08  # infection -> severity
     a2: float = 0.05  # respiratory stress -> severity
-    a3: float = 0.05  # treatment reduces severity
+    a3: float = 0.08  # treatment reduces severity
 
     b1: float = 0.05  # baseline infection growth
-    b2: float = 0.05  # treatment reduces infection
+    b2: float = 0.10  # treatment reduces infection
 
     c1: float = 0.06  # severity -> respiratory stress
     c2: float = 0.05  # infection -> respiratory stress
-    c3: float = 0.04  # treatment reduces respiratory stress
+    c3: float = 0.10  # treatment reduces respiratory stress
 
     # --------------------------
     # OBSERVATION EQUATIONS
@@ -96,7 +96,7 @@ class SimulationParams:
     kappa1: float = 0.02   # HR weight
     kappa2: float = 0.08   # RR weight
     kappa3: float = 0.5    # temperature weight
-    tauT: float = 24.0     # threshold for treatment
+    tauT: float = 22.0    # threshold for treatment
 
     # --------------------------
     # CLIPPING BOUNDS
